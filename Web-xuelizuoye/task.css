@@ -1,0 +1,174 @@
+.header-top{
+	height: 32px;
+	line-height: 32px;
+	border-bottom: 1px solid rgba(218,218,218,1);
+}
+.container{
+	width: 1200px;
+	margin: 0 auto;
+}
+.header-info{
+	float: right;
+}
+.header-info li{
+	margin-left: 30px;
+	float: left;
+}
+.header-info a{
+	font-size: 15px;
+	font-weight: 300;
+	color: rgba(0,0,0,1);
+}
+.header-bottom{
+	height: 100px;
+}
+.logo{
+	margin-top: 14px;
+	float: left;
+}
+.nav{
+	float: left;
+	margin-top: 38px;
+}
+.nav li{
+	float: left;
+	width: 122px;
+	text-align: center;
+	border-right: 1px solid black;
+	font-size: 16px;
+	font-weight: bold;
+}
+.nav .last{
+	border: none;
+}
+.nav a{
+	color: rgba(0,0,0,1);
+}
+.form{
+	float: right;
+	margin-top: 34px;
+}
+.search{
+	float: left;
+	width: 145px;
+	padding: 9px;
+	border: 1px solid rgba(208 61 61 1);
+}
+.submit{
+	float: left;
+	width: 36px;
+	height: 36px;
+	border: 1px solid green;
+	background: rgba(208,61,61,1) url(images/搜索.png) no-repeat center center;
+}
+
+.banner{
+	height: 300px;
+	position: relative;
+}
+.banner li{
+	width: 100%;
+	height: 300px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.banner-one{
+	background: url(images/同舟共济.png) no-repeat center center;
+}
+.banner-two{
+	background: url(images/正能量.png) no-repeat center center;
+}
+.banner-three{
+	background: url(images/弘扬.png) no-repeat center center;
+}
+.prev,
+.next{
+	width: 56px;
+	height: 56px;
+	position: absolute;
+	top: 110px;
+	left: 20%;
+}
+.next{
+	left: auto;
+	right: 20%;
+}
+
+.middle{
+	background-color: rgba(90,90,100,0.5);
+	margin-top: 5px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.body1{
+	background-color: rgba(255,255,255,0.5);
+	width: 1200px;
+	margin: 0 auto;
+}
+.body1-top{
+    font-size: 20px;
+    font-weight: 400;
+    color: rgba(73,73,73,1);
+    padding-top: 10px;
+    padding-left: 5px;
+}
+.body2{
+	width: 1200px;
+	margin: 0 auto;
+	background-color: rgba(255,255,255,0.5)
+
+}
+.body2-top{
+    font-size: 20px;
+    font-weight: 400;
+    color: rgba(73,73,73,1);
+    padding-top: 10px;
+    padding-left: 5px;
+}
+.img{
+	float: left;
+	margin-top: 10px;
+	margin-right: 20px;
+	margin-left: 20px;
+	color: #000;
+	font-size: 18px;
+}
+.img div{
+	width: 190px;
+	height: 115px;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 10px;
+	padding-left: 5px;
+}
+.p1{
+	color: #999;
+}
+.p2{
+	color: #999;
+	font-size: 14px;
+	line-height: 24px;
+	height: 44px;
+}
+
+.footer{
+	height: 180px;
+	width: 100%;
+	background-color: #000;
+	font-size: 18px;
+	color: #999;
+	padding-top: 30px;
+}
+.contact a{
+	color: #999;
+}
+.contact li{
+	float: left;
+	width: 122px;
+	text-align: center;
+	border-right: 1px solid #999;
+}
+.contact .last{
+	border: none;
+}
