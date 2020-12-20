@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>zhuce</title>
+
+	<style>
+		.clear:after {
+			content: '';
+			display: block;
+			height: 0;
+			clear: both;
+		}
+		#box1{
+			margin: 50px;
+			float: left;
+		}
+		#user{
+			width: 220px;
+			height: 45px;
+			border: 1px solid black;
+			border-left: 0px;
+			outline: none;
+		}
+		#pass{
+			width: 220px;
+			height: 45px;
+			border: 1px solid black;
+			border-left: 0px;
+			outline: none;
+		}
+		#send{
+			width: 315px;
+			height: 45px;
+			background-color: gray;
+			text-align: center;
+		}
+		#box2{
+			margin: 50px;
+			color: red;
+			float: left;
+		}
+		.tit{
+			height: 27px;
+			width: 70px;
+			padding: 10px;
+			text-align: center;
+			border: 1px solid black;
+			border-right: 0px;
+			float: left;
+		}
+		.te{
+			height: 20px;
+			font-size: 5px;
+			color: #ccc;
+		}
+	</style>
+
+</head>
+<body>
+	<div class="clear">
+		<div id="box1">
+			<div class="clear">
+				<span class="tit">用&nbsp&nbsp户&nbsp&nbsp名</span>
+				<input type="text" id="user">
+				<p id="us" class="te"></p>
+			</div>
+			<div class="clear">
+				<span class="tit">设置密码</span>
+				<input type="password" id="pass">
+				<p id="pa" class="te"></p>
+			</div>
+			<button id="send">立即注册</button>
+		</div>
+		<div id="box2"></div>
+	</div>
+
+	<script>
+		var user = document.getElementById('user');
+		var pass = document.getElementById('pass');
+		var send = document.getElementById('send');
+		var box2 = document.getElementById('box2');
+		var us = document.getElementById('us');
+		var pa = document.getElementById('pa');
+
+		user.onfocus = function(){
+			us.innerHTML = '支持中文数字';
+		}
+		user.onblur = function(){
+			if(user.value == ''){
+				us.innerHTML = '用户名不能为空';
+			}else{
+				us.innerHTML = '';
+			}
+		}
+		pass.onfocus = function(){
+			pa.innerHTML = '建议使用两种字符组合';
+		}
+		pass.onblur = function(){
+			if(pass.value == ''){
+				pa.innerHTML = '密码不能为空';
+			}else{
+				pa.innerHTML = '';
+			}
+		}
+
+		send.onclick = function(){
+			if(user.value!='' && pass.value!=''){
+				var p = document.createElement('p');
+				p.innerHTML = '注册成功！'+'<br />'+'<br />'+'用户名：'+user.value+'<br />'+'<br />'+'密码：'+pass.value;
+				box2.appendChild(p);
+			}else{
+				alert('用户名或密码为空，请重新输入！')
+			}
+		}
+	</script>
+</body>
+</html>

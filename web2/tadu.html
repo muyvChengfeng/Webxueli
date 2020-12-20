@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>塔读文学</title>
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="task.css">
+	<style>
+		.ti{
+			width: 100%;
+		}
+		#box{
+			position: relative;
+			width: 300px;
+			height: 300px;
+			margin: 30px auto;
+			border: 3px solid #000;
+		}
+		#slider{
+			position: absolute;
+			width: 100px;
+			height: 100px;
+			background-color: rgba(100,100,100,0.5);
+			display: none;
+		}
+		#imgBox{
+			position: absolute;
+			left: 303px;
+			top: -3px;
+			width: 300px;
+			height: 300px;
+			border: 3px solid red;
+			overflow: hidden;
+			display: none;
+		}
+		.di1{
+			width: 300px;
+			height: 300px;
+		}
+		.di2{
+			position: absolute;
+			width: 900px;
+			height: 900px;
+		}
+		#time{
+			width: 100px;
+			height: 30px;
+			border: 1px solid gray;
+			margin: 15px;
+			text-align: center;
+			float: right;
+		}
+	</style>
+</head>
+<body>
+	<div id="box">
+		<img src="images/时间.png" alt="" class="di1">
+		<div id="slider"></div>
+		<div id="imgBox">
+			<img src="images/时间.png" alt="" id='di' class="di2">
+		</div>
+	</div>
+	<div class="clear">
+		<div id="time"></div>
+	</div>
+	<div class="header">
+		<div class="header-top">
+			<div class="container clear">
+				<ul class="header-info clear">
+					<li><a href="#">登录</a></li>
+					<li><a href="zhuce.html">注册</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="header-bottom">
+			<div class="container clear">
+				<img src="images/塔读文学.png" alt="logo图" class="logo">
+				<ul class="nav clear">
+					<li class="first"><a href="#">首页</a></li>
+					<li><a href="#">作品库</a></li>
+					<li><a href="#">原创女生</a></li>
+					<li><a href="#">脑洞创意</a></li>
+					<li><a href="#">衍生版权</a></li>
+					<li class="last"><a href="#">作者福利</a></li>
+				</ul>
+				<form class="form clear">
+					<input type="text" placeholder="关键词、书名、作者名" class="search" />
+					<input type="button" class="submit" />
+				</form>
+			</div>
+		</div>
+	</div>	
+	<div class="banner">
+		<ul>
+			<li class="banner-one"></li>
+			<li class="banner-two"></li>
+			<li class="banner-three"></li>
+		</ul>
+		<a href="#">
+			<img src="images/左.png" alt="上一页" class="prev">
+		</a>
+		<a href="#">
+			<img src="images/右.png" alt="下一页" class="next">
+		</a>
+	</div>
+	<div class="middle">
+		<div class="body1">
+			<div class="body1-top">				
+				精品推荐
+				<hr />
+			</div>
+			<div class="body1-bottom clear">
+				<div class="img">
+					<a href="#">
+						<img src="images/儒道独尊.png" alt="儒道独尊">
+					</a>
+					<div>
+						<p>儒道独尊</p>
+						<p class="p1">惊蛰闻雷</p>
+						<p class="p2">一首诗词可做何用？杀敌！诛仙！降妖！镇魔！</p>
+					</div>
+				</div>
+				<div class="img">
+					<a href="#">
+						<img src="images/财法仙途.png" alt="财法仙途">
+					</a>
+					<div>
+						<p>财法仙途</p>
+						<p class="p1">木井</p>
+						<p class="p2">踏足仙之巅，成就世间无敌后，回顾往昔……</p>
+					</div>
+				</div>
+				<div class="img">
+					<a href="#">
+						<img src="images/神魔.png" alt="神魔埋骨人">
+					</a>
+					<div>
+						<p>神魔埋骨人</p>
+						<p class="p1">高胜寒</p>
+						<p class="p2">鬼气重现，万物进化； 人类只有成为御灵师，封印……</p>
+					</div>
+				</div>
+				<div class="img">
+					<a href="#">
+						<img src="images/文镇山河.png" alt="文镇山河">
+					</a>
+					<div>
+						<p>文镇山河</p>
+						<p class="p1">三江雨</p>
+						<p class="p2">文可定江山，亦可镇山河，挥毫泼墨处，江山染血时。</p>
+					</div>
+				</div>
+				<div class="img">
+					<a href="#">
+						<img src="images/傲视魔君.png" alt="傲视魔君">
+					</a>
+					<div>
+						<p>傲视魔君</p>
+						<p class="p1">土堆</p>
+						<p class="p2">敢问何为无敌？ 无敌就是无论你在什么境界，谁也奈何不了你！</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="body2">
+			<div class="body2-top">				
+				原创新书
+				<hr />
+			</div>
+			<div class="body2-bottom clear">
+				<div class="img">
+					<a href="#">
+						<img src="images/修罗.png" alt="从骷髅小兵到修罗大帝" />
+					</a>
+					<div>
+						<p>从骷髅小兵到修罗大帝</p>
+						<p class="p1">良</p>
+						<p class="p2">一觉醒来，王逸发现自己竟穿越到了十年前！直接够买能和现实融合的游戏《天域》！</p>
+					</div>
+				</div>
+				<div class="img">
+					<a href="#">
+						<img src="images/原始文明.png" alt="原始文明：提前登录">
+					</a>
+					<div>
+						<p>原始文明：提前登录</p>
+						<p class="p1">拉面熊</p>
+						<p class="p2">从原始文明开始，建设部落！发展种族！掠夺资源！最终成为神级文明！</p>
+					</div>
+				</div>
+				<div class="img">
+					<a href="#">
+						<img src="images/悠闲桃源.png" alt="悠闲桃源">
+					</a>
+					<div>
+						<p>悠闲桃源</p>
+						<p class="p1">高胜寒</p>
+						<p class="p2">程小麦厌烦了城市生活，回到家乡搞种植、开渔场、育花卉，没事逗逗狗……</p>
+					</div>
+				</div>
+				<div class="img">
+					<a href="#">
+						<img src="images/斗灵.png" alt="斗灵大陆">
+					</a>
+					<div>
+						<p>斗灵大陆</p>
+						<p class="p1">踏雪寻</p>
+						<p class="p2">斗灵世界是一个充满兽灵的世界，修士收服灵兽做为兽灵，而胡栎以将魂做兽灵，独步天下！</p>
+					</div>
+				</div>
+				<div class="img">
+					<a href="#">
+						<img src="images/时间.png" alt="我的时间正在流逝">
+					</a>
+					<div>
+						<p>我的时间正在流逝</p>
+						<p class="p1">陈无念</p>
+						<p class="p2">在这个世界，每个人手腕上都有一串数字，显示着当前的寿命。</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="container clear">
+			<ul class="contact">
+				<li><a href="#">关于塔读</a></li>
+            	<li><a href="#">联系塔读</a></li>
+            	<li class="last"><a href="#">塔读微博</a></li>
+        	</ul>		
+        	<br />           
+            <br />
+            <hr />
+            <br />
+            <p>
+                塔读小说版权所有，未经许可不得转载
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;京ICP证080655号
+                &nbsp;&nbsp;
+                京ICP备09017823号-5
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                《网络文化经营许可证》文网文[2010]230号
+            </p>
+            <p>
+                Copyright(C) 2008-2020 www.tadu.com All Rights Reserved 版权所有 北京易天新动网络科技有限公司
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                京公网安备 11010202003943号
+            </p>
+        </div>
+	</div>
+
+	<script>
+		var box = document.getElementById('box'),
+			slider = document.getElementById('slider'),
+			di = document.getElementById('di'),
+			imgBox = document.getElementById('imgBox');
+
+		var time = document.getElementById('time');
+
+		//放大
+		box.onmouseover = function(){
+			slider.style.display = 'block';
+			imgBox.style.display = 'block';
+		}
+		box.onmouseout = function(){
+			slider.style.display = 'none';
+			imgBox.style.display = 'none';
+		}
+		box.onmousemove = function(ev){
+			var left = ev.clientX-slider.offsetWidth/2-box.offsetLeft;
+			var top = ev.clientY-slider.offsetWidth/2-box.offsetTop;
+			left = left<0?0:left>200?200:left;
+			top = top<0?0:top>200?200:top;
+			slider.style.left = left+'px';
+			slider.style.top = top+'px';
+
+			di.style.left = left/200*(-600)+'px';
+			di.style.top = top/200*(-600)+'px';
+		}
+
+		//时间
+		function add0(n){
+			return n<10?'0'+n:n;
+		}
+		function showTime(){
+			var d = new Date();
+			var h = d.getHours();
+			var m = d.getMinutes();
+			var s = d.getSeconds();
+			time.innerHTML = add0(h)+'-'+add0(m)+'-'+add0(s);
+		}
+		showTime();
+		setInterval(showTime,1000)
+	</script>
+</body>
+</html>
